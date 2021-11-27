@@ -17,12 +17,12 @@ interviewRouter.route('/')
     .catch((err)=> next(err));
 })
 .post((req, res, next) => {
-    Dishes.create(req.body)
-    .then((dish)=>{
-        console.log('Dish created',dish);
+    Interview.create(req.body)
+    .then((interview)=>{
+        console.log('Interview created',interview);
         res.statusCode=200;
         res.setHeader('Content-Type','application/json');
-        res.json(dish);
+        res.json(interview);
     },(err)=>next(err))
     .catch((err)=> next(err));
 });

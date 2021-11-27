@@ -18,7 +18,7 @@ const dbname = "conFusion";
   
 MongoClient.connect(url,{ useNewUrlParser: true }, (err,client)=>{
     if(!err) {
-        console.log("successful connection with the server"); 
+        console.log("successful connection with the Database server"); 
     }
     else
         console.log("Error in the connectivity");
